@@ -54,7 +54,7 @@ function Orders() {
   useEffect(() => {
     fetchProducts()
       .then((results) => setProducts(results.data))
-      .catch((err) => console.log(err));
+      .catch(() => toast.warning('Erro ao listar produtos'));
   }, []);
 
   return (
