@@ -9,6 +9,7 @@ import {
 } from '@expo-google-fonts/open-sans';
 import AppLoading from 'expo-app-loading';
 import Home from './src/Home';
+import Routes from './src/Routes';
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -23,8 +24,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      <Header />
-      <Home />
+      <Routes />
     </View>
   );
 }
@@ -34,3 +34,5 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 });
+
+// Continua em 1:00:00 depois do Commit
