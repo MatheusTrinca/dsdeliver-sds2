@@ -26,3 +26,5 @@ const styles = StyleSheet.create({
     paddingHorizontal: '5%',
   },
 });
+
+// Continua em 1:24:38
